@@ -1,0 +1,87 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+button {
+  border-radius: 1em;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  background: #fff;
+}
+
+button:active {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10rem;
+}
+
+section {
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 1em;
+  background: #eee;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section * + * {
+  margin-top: 2rem;
+}
+
+section + section {
+  margin-top: 5rem;
+}
+
+.popup-content {
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #222;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.3em;
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
+          box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 0.3s ease-out, line-height 0.3s ease-out;
+  transition: opacity 0.3s ease-out, line-height 0.3s ease-out;
+}
+
+.popup-content.closed {
+  opacity: 0;
+  line-height: 0;
+}
+/*# sourceMappingURL=style.css.map */
